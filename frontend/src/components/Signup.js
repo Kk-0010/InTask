@@ -21,7 +21,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8000/api/v1/auth/register", formData);
+      const res = await axios.post("https://intask-backend-u0ns.onrender.com/api/v1/auth/register", formData);
       alert(res.data.message);
       navigate("/login");
     } catch (err) {
